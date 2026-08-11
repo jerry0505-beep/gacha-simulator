@@ -72,7 +72,7 @@
 </main>
 <script>
 const defaults={prices:{single:50,ten:450,firstSingle:9,firstTen:225},crystalChance:.37,directChance:.33,pityEnabled:false,pityDraws:100,discountEnabled:false,discountInterval:30,discountChance:99,discountTenPrice:360,discountMaxTriggers:5,pool:[['一般獎勵',100]],wish:[['魔女回憶錄·幻之影-莉莉安',.07,true],['擼貓的莉莉安表情（永久）',36.74,false],['莉莉安魔女回憶錄舞蹈',14.70,false],['魔女回憶錄戰況按鍵包',4.41,false],['莉莉安頭像',44.09,false]]};
-const supabaseUrl='https://qevhjdrsedvnezouppy.supabase.co',supabaseKey='sb_publishable_lNM1wXYVxEXSc2H_T0nWag_PRFuM3Kw',adminEmail='jerrywang0317@gmail.com',siteUrl='https://jerry0505-beep.github.io/gacha-simulator/';
+const supabaseUrl='https://qevhjrdrsedvnezouppy.supabase.co',supabaseKey='sb_publishable_lNM1wXYVxEXSc2H_T0nWag_PRFuM3Kw',adminEmail='jerrywang0317@gmail.com',siteUrl='https://jerry0505-beep.github.io/gacha-simulator/';
 let cfg=loadCfg(), presets=loadPresets(), sharedPresets=[], sharedPresetError='', session=null, state=initialState();
 function clone(o){return JSON.parse(JSON.stringify(o))} function loadCfg(){try{const saved=JSON.parse(localStorage.gachaCfg);return {...clone(defaults),...saved,pool:clone(defaults.pool)}}catch{return clone(defaults)}} function saveCfg(){localStorage.gachaCfg=JSON.stringify(cfg)} function loadPresets(){try{return JSON.parse(localStorage.gachaPresets)||{}}catch{return {}}} function savePresets(){localStorage.gachaPresets=JSON.stringify(presets)}
 function initialState(){return{draws:0,cost:0,crystals:0,freeDraws:0,free:0,dailyFreeUsed:false,pityCount:0,discountEligibleDraws:0,discountTriggers:0,pendingDiscount:false,first:true,halt:false,history:[],important:[],wishTaken:[],wishLog:[]}}

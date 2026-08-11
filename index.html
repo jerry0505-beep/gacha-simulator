@@ -45,7 +45,7 @@
     <article class="card"><h2>特殊抽獎</h2><div id="wishList" class="wishPool"></div><div class="buttons"><button id="wishButton" onclick="specialDraw()">特殊獎勵抽獎</button></div><p class="hint">每次按下按鈕才進行特殊抽獎；獲得的獎勵會從清單剔除。前四次未中限定造型時，第五次必定獲得。</p><div id="wishResult" class="wish"></div></article>
     <article class="card"><h2>抽獎歷史</h2><div class="buttons"><button class="alt" id="selectAllButton" onclick="selectAll()">一鍵全選</button><button onclick="exchange()">選取 3 個換免費抽</button></div><div id="historyMeta" class="historyMeta">尚無一般獎勵</div><div id="history" class="history"></div></article>
   </section>
-  <details class="card settings" open><summary>活動設定（直接編輯後按套用）</summary><p class="hint">獎池使用相對權重；機率欄位以百分比填寫。</p>
+  <details class="card settings"><summary>活動設定（直接編輯後按套用）</summary><p class="hint">獎池使用相對權重；機率欄位以百分比填寫。</p>
     <div id="basic"></div><h3>一般獎池</h3><p class="hint">每抽固定獲得：<b>一般獎勵（100%）</b>。此獎勵只用於「3 個獎勵換 1 次免費抽」。</p>
     <h3>特殊獎勵池</h3><table><thead><tr><th>獎品名稱</th><th>初始權重</th><th>限定造型</th></tr></thead><tbody id="wishRows"></tbody></table>
     <div class="buttons"><button onclick="applySettings()">套用設定</button><button class="alt" onclick="restoreDefaults()">還原預設</button></div><div id="notice" class="notice"></div>

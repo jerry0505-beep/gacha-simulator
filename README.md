@@ -1,0 +1,2 @@
+# gacha-simulator
+gacha-simulator
